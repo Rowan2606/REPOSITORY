@@ -2,11 +2,9 @@ from sense_hat import SenseHat
 
 sense = SenseHat()
 
-r = 255
-g = 0
-b = 255
-
-sense.clear()
-
+blue = (0,0,255)
+red = (255,0,0)
+for num in range(1,6):
+    sense.show_message("Trash "+str(num), text_colour=red, back_colour=blue, scroll_speed=0.05)
 
 
